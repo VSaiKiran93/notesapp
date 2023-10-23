@@ -1,6 +1,6 @@
 import{
-  BrowserRouter as Router,
-  Routes, Route
+  HashRouter as Router,
+  Route
 } from "react-router-dom";
 import React from 'react';
 import './App.css';
@@ -14,10 +14,8 @@ function App() {
     <div className="container dark">
       <div className="app">
         <Header />
-        <Routes>
           <Route path="/" exact component={NotesListPage} />
           <Route path="/note/:id" component={NotePage} />
-        </Routes>
       </div>
     </div>
     </Router>
